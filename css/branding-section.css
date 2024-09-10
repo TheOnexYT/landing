@@ -1,0 +1,139 @@
+/* Estilo de la seccion Brandinig  */
+
+.brandinig{
+    background-color: #A31717; /* Color de fondo rojo */
+    color: #fff; /* Texto blanco */
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    padding: 6rem 0rem; /* Ajusta el espaciado interno */
+    padding-bottom: 2rem;
+    margin: 0; /* Elimina margen adicional */
+    margin-left: 0.15rem;
+    margin-right: 1.8rem;
+    padding-bottom: 8rem;
+    
+}
+
+.branding-image {
+    width: 100%; /* Asegura que la imagen sea responsiva */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+    display: block;
+    
+}
+
+.container-brandinig{
+    display: flex;
+    flex-direction: row;
+}
+
+.branding-content{
+  
+    margin-top: 66px; /* Elimina el margen superior */
+    margin-right: 4rem; /* Espacio a la derecha del contenedor de texto (ajusta según necesites) */
+    margin-bottom: 0;
+    
+   
+}
+
+.branding-title{
+    font-family: 'Merriweather Sans', sans-serif; /* Fuente */
+    font-size: 2.5rem; /* Tamaño del título */
+    font-weight: 4000; /* Regular 400 */
+    color: #ffffff; /* Color del texto */
+    margin-bottom: 1rem; /* Espaciado inferior */
+    margin-top: 2rem;
+    
+}
+
+.branding-subtitle{
+    font-family: 'Sebino', sans-serif; /* Usa la fuente Sebino Regular */
+    font-size: 0.91rem; /* Tamaño del subtítulo */
+    color: #ffffff; /* Color del texto blanco */
+    line-height: 2;
+    margin-bottom: 3rem; /* Espaciado inferior reducido */
+    margin-right: 2rem; /* Elimina el margen derecho */
+}
+
+/* Oculta contenido móvil en pantallas grandes */
+.branding-content-mvl, .branding-title-mvl, .branding-subtitle-mvl,.branding-image-mvl {
+    display: none;
+}
+
+
+
+/* Estilo de la seccion Brandinig con media */
+
+@media(max-width:950px){
+    .brandinig{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0rem;
+        padding-bottom: 8rem;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 5rem;
+    }
+
+    .branding-title, .branding-subtitle {
+        display: block; /* Asegurándonos de que se muestren en pantallas grandes */
+    }
+
+    .branding-content-mvl, .branding-title-mvl, .branding-subtitle-mvl {
+        display: block; /* Muestra el contenido móvil */
+    }
+
+    .branding-content{
+        display: none;
+    }
+
+    .branding-content-mvl{
+        margin-right: 0;
+        margin-bottom: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+    }
+
+    .branding-title{
+        display: none;
+    }
+
+
+    .branding-title-mvl{
+        font-size: 2.7rem;
+        text-shadow: none;
+        margin-bottom: 2rem;
+    }
+
+    .branding-subtitle{
+        display: none;
+    }
+
+
+    .branding-subtitle-mvl{
+       font-size: 1.2rem;
+       margin-right: 0;
+    }
+
+    .branding-image {
+        display: none; /* Si deseas ocultar la imagen en móviles */
+    }
+
+    .branding-image-mvl{
+        display: block;
+    }
+
+    .container-brandinig{
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 950px) {
+    .branding-image-mvl{
+        display: none;
+    }
+}

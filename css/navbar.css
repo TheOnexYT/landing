@@ -1,0 +1,164 @@
+/* Estilo del header */
+header{
+    padding: 0rem;
+}
+
+/* Estilo del nav */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    color: #fff;
+}
+
+.logo{
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    margin-right: auto; /* Empuja el logo a la izquierda */
+    font-family: 'Okomito', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    font-size: 1rem; /* Tamaño del logo en pantallas grandes */
+}
+
+.logomvl {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    margin-right: auto; /* Empuja el logo a la izquierda */
+    font-family: 'Okomito', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    font-size: 1rem; /* Tamaño del logo en pantallas grandes */
+}
+
+
+.nav-btn {
+    font-family: 'Tafel Sans Pro', sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.nav-btn:hover {
+    color: #4e0b0b; /* Cambia el color al pasar el ratón sobre el botón */
+}
+
+.menu-toggle {
+    display: none; /* Oculta el botón en pantallas grandes */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle img {
+    width: 24px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+
+.nav-menu {
+    display: none; /* Oculta el menú por defecto */
+    background-color: dimgrey; /* Fondo negro para el menú desplegable */
+    position: absolute;
+    top: 100%; /* Justo debajo del botón del menú */
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.nav-menu.active {
+    display: flex; /* Muestra el menú cuando esté activo */
+}
+
+.nav-btn {
+    color: #ffffff; /* Texto blanco para los botones del menú desplegable */
+    padding: 1rem;
+    text-align: center; /* Centra el texto de los botones */
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.navbar .links{
+    color: #fff;
+    display: flex;
+    gap: 2rem;
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: row; /* Mantiene los elementos en fila */
+        justify-content: space-between; /* Espacio entre logo y botón del menú */
+        align-items: center; /* Alinea verticalmente el logo y el icono del menú */
+    }
+
+    .logo {
+        margin-right: auto; /* Empuja el logo a la izquierda */
+    }
+
+    .logo h1 {
+        font-size: 0.8rem; /* Tamaño de fuente     más pequeño para el logo en pantallas pequeñas */
+        margin-left: 1rem; /* Margen a la izquierda para separar del borde */
+    }
+
+    .nav-buttons {
+        display: none; /* Oculta los botones en pantallas pequeñas */
+    }
+
+    .menu-toggle {
+        display: block; /* Asegúrate de que el botón sea visible en pantallas pequeñas */
+        background: none;
+        border: none;
+        cursor: pointer;
+        align-self: flex-end; /* Alinea el botón del menú a la derecha */
+        margin-left: auto; /* Asegura que el botón esté alineado a la derecha */
+    }
+    
+
+    /* Estilo del menú desplegable */
+    .nav-menu {
+        display: flex; /* Muestra el menú siempre en el flujo del documento para permitir transiciones */
+        background-color: #000000; /* Fondo negro para el menú desplegable */
+        position: absolute;
+        top: 60px; /* Ajusta la posición según el tamaño del botón del menú */
+        right: 0; /* Alinea el menú con el borde derecho del contenedor */
+        left: auto; /* Asegura que no se alinee con el borde izquierdo */
+        width: 200px; /* Ancho del menú desplegable */
+        max-height: 0; /* Inicialmente el menú está oculto */
+        overflow: hidden; /* Oculta el contenido que se desborda */
+        flex-direction: column;
+        padding: 0.5rem; /* Ajusta el padding para hacerlo más pequeño */
+        z-index: 1;
+        border-radius: 10px; /* Bordes curvos */
+        transition: max-height 0.5s ease-out, opacity 0.5s ease-out; /* Transiciones más suaves */
+        opacity: 0; /* Oculta el menú por defecto */
+    }
+
+    /* Menú desplegable activo */
+    .nav-menu.active {
+        max-height: 500px; /* Ajusta el valor según el tamaño máximo del menú desplegable */
+        opacity: 1; /* Muestra el menú */
+    }
+
+    .logo{
+        display: none;
+    }
+}
+
+@media (min-width: 701px) {
+    .logomvl {
+        display: none
+    };
+}

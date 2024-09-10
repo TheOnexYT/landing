@@ -1,0 +1,141 @@
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    background-color: #ADA7A7;
+    border-radius: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.img-container{
+    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-img{
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.contactUS-info{
+    max-width: 420px;
+    display: flex;
+    padding: 4rem;
+    gap: 1rem;
+    flex-direction: column;
+
+    h2{
+        color: #fff;
+        font-size: 3rem;
+        margin: 0;
+        
+    }
+
+    p{
+        color: #fff;
+        font-size: 16px;
+        width: 80%;
+        padding-top: 0.5rem;
+        font-weight: 100;
+    }
+}
+
+.btn-contactUS{
+    background-color: #A31717;
+    color: white;
+    padding: 15px 20px;
+    width: 170px;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: none;
+}
+
+.btn-contactUS:hover{
+    background-color: #fff;
+    color: black;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        background-color: #331b3b;
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .contactUS-info {
+        max-width: 100%;
+        padding: 0;
+        gap: 0;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 2rem;
+        }
+    }
+
+    .img-container {
+        display: none;
+    }
+
+    .btn-contactUS {
+        background-color: black;
+        margin: 1rem 0;
+    }
+
+    .btn-contactUS:hover {
+        background-color: #fff;
+        color: black;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container {
+        background-color: #331b3b;
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .contactUS-info {
+        max-width: 100%;
+        padding: 0;
+        gap: 0;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 2rem;
+        }
+    }
+
+    .img-container {
+        display: none;
+    }
+
+    .btn-contactUS {
+        background-color: black;
+        margin: 1rem 0;
+    }
+
+    .btn-contactUS:hover {
+        background-color: #fff;
+        color: black;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+}

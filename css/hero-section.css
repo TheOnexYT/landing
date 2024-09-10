@@ -1,0 +1,113 @@
+/* Estilo de la sección Hero */
+.hero {
+    display: flex;
+    justify-content: space-between; /* Espacio entre columnas */
+    align-items: flex-start; /* Alinea el contenido al inicio (más arriba) */
+    padding: 6rem 0rem; /* Ajusta el espaciado interno */
+    padding-bottom: 1rem;
+    margin: 0; /* Elimina margen adicional */
+    margin-left: 0.15rem;
+    margin-right: 1.8rem;
+    padding-bottom: 8rem;
+}
+
+.hero-content{
+    flex: 1; /* Toma todo el espacio disponible */
+    max-width: 600px; /* Limita el ancho máximo */
+    padding-left: 0; /* Elimina el relleno a la izquierda */
+    margin-top: 0; /* Elimina el margen superior */
+    margin-bottom: 0; /* Ajusta el margen inferior si es necesario */
+    margin-right: 4rem; /* Espacio a la derecha del contenedor de texto (ajusta según necesites) */
+
+}
+
+.hero-title {
+    font-family: 'Merriweather Sans', sans-serif; /* Fuente */
+    font-size: 3.9rem; /* Tamaño del título */
+    font-weight: 4000; /* Regular 400 */
+    color: #ffffff; /* Color del texto */
+    text-shadow: 2px 2px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000; /* Borde negro */
+    margin-bottom: 0.5rem; /* Espaciado inferior */
+}
+
+/* Subtítulo de la sección Hero */
+.hero-subtitle {
+    font-family: 'Sebino', sans-serif; /* Usa la fuente Sebino Regular */
+    font-size: 1.162rem; /* Tamaño del subtítulo */
+    color: #ffffff; /* Color del texto blanco */
+    margin-bottom: 1rem; /* Espaciado inferior reducido */
+    margin-right: 2rem; /* Elimina el margen derecho */
+}
+
+.btn-primary{
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #ffffff; /* Color del texto blanco */
+    background-color: #3f3434; /* Color de fondo del botón */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes curvos */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    margin-top: 1rem; /* Espaciado superior para mover el botón hacia abajo */
+    border-radius: 10px; /* Aumenta el radio para bordes más redondeados */
+}
+
+
+.btn-primary:hover{
+    background-color:#2d2a2a;
+}
+
+.hero-image{
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes curvos para la imagen */
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 950px) {
+    .hero{
+        flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
+        align-items: center; /* Centra el contenido horizontalmente */
+        text-align: center; /* Centra el texto */
+        padding: 0rem; /* Ajusta el padding para pantallas pequeñas */
+        padding-bottom: 8rem;
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-right: 0; /* Elimina el margen derecho */
+        margin-top: 5rem;
+
+    }
+
+    .hero-content{
+        margin-right: 0; /* Elimina el margen derecho del contenedor de texto */
+        margin-bottom: 1rem; /* Espaciado inferior para separar del botón o imagen */
+        padding-left: 0; /* Elimina el relleno a la izquierda */
+        padding-right: 0; /* Elimina el relleno a la derecha */
+        max-width: 100%; /* Permite que el contenedor ocupe todo el ancho disponible */
+    }
+
+    .hero-title{
+        font-size: 2.7rem; /* Reduce el tamaño del título */
+        text-shadow: none; /* Elimina los bordes en el título */
+        margin-bottom: 2rem;
+    }
+
+    .hero-subtitle{
+        font-size: 1.2rem; /* Ajusta el tamaño del subtítulo si es necesario */
+        margin-right: 0;
+    }
+
+    .btn-primary {
+        background-color: #000000;
+    }
+
+    .hero-image {
+        display: none;
+    }
+}
+
+@media (min-width: 950px) {
+    .hero-image-movil{
+        display: none;
+    }
+}

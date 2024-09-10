@@ -1,0 +1,62 @@
+.companies{
+    padding: 2rem 6rem;
+}
+
+.companies-text{
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.companies-text p{
+    font-size: 0.7;
+    color: #667085;
+}
+
+.companies-logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #857978;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo-companies{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.logo-companies img{
+    max-width: 70%; /* Ajusta el tamaño máximo de las imágenes de los logos */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 790px) {
+    .companies{
+        padding: 0;
+    }
+    .companies-logos {
+        flex-direction: row; /* Mantiene los logos en una fila */
+        background-color: #331b3b; /* Color de fondo para pantallas pequeñas */
+        padding: 1.5rem; /* Aumenta el padding para pantallas pequeñas */
+    }
+
+    .logo-companies {
+        flex: 1 1 20%; /* Permite que los logos se reduzcan proporcionalmente */
+        margin: 0; /* Elimina el margen entre los logos */
+    }
+
+    .logo-companies img {
+        max-width: 80%; /* Ajusta el tamaño máximo de las imágenes de los logos para hacerlos un poco más grandes */
+    }
+}
+
